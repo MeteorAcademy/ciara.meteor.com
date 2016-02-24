@@ -1,4 +1,47 @@
+// ciara.meteor.com was lovingly coded by Ciara Burkett
+
 @import 'jeet'
 @import 'typographic'
 
 typographic()
+
+// Font Variables
+$source = 'Source Sans Pro', sans-serif
+$arbutus = 'Arbutus Slab', serif
+
+// Color Variables
+$background = #463337
+$category = #866269
+$link = #C7143A
+$project-bg = #382529
+$text = #F1DFD5
+
+// Global
+body
+  background-color: $background
+  color: $text
+  font-family: $source
+  h1, h2, h3, h4, h5, h6
+    color: $category
+    font-family: $arbutus
+  ul
+    list-style: none
+  a
+    color: $link
+    text-decoration: none
+
+// Container
+.container
+  center(900px)
+
+.main aside
+  col(3/9)
+
+.main .projects
+  col(6/9)
+  h3
+    margin-top: 0
+  li
+    background-color: $project-bg
+    margin-bottom: 20px
+    padding: 10px
